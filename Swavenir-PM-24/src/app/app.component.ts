@@ -8,6 +8,7 @@ import { CareerComponent } from './features/career/career.component';
 import { ServicesComponent } from './features/services/services.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { PricingComponent } from './features/pricing/pricing.component';
+import { DashboardComponent } from "./dashboard/dashboard.component";
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ import { PricingComponent } from './features/pricing/pricing.component';
     ServicesComponent,
     ContactComponent,
     PricingComponent,
-  ],
+    DashboardComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
