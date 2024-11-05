@@ -9,6 +9,7 @@ import { ServicesComponent } from './features/services/services.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { PricingComponent } from './features/pricing/pricing.component';
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { SignupComponent } from './components/signup/signup.component';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
     ServicesComponent,
     ContactComponent,
     PricingComponent,
-    DashboardComponent
+    DashboardComponent,
+    SignupComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
