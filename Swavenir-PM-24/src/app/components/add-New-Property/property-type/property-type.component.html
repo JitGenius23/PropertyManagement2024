@@ -1,0 +1,80 @@
+<div  class="max-w-7xl mx-auto font-sans">
+  <div class="container mx-auto p-4">
+    <!-- Heading -->
+    <h1 class="text-2xl md:text-4xl font-bold text-gray-800 text-center mb-6">
+      Property Type
+    </h1>
+
+    <!-- Paragraph -->
+    <p
+      class="text-gray-600 text-base md:text-lg text-center max-w-prose mx-auto mb-8"
+    >
+      Explore a variety of property types tailored to meet your needs. Find the
+      perfect home or investment with ease.
+    </p>
+
+    <!-- Cards Section -->
+    <div class="grid max-w-xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 max-sm:grid-cols-2 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white shadow-lg max-w-sm rounded-lg overflow-hidden">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Property Image"
+          class="w-full h-40 object-cover"
+        />
+        <div class="p-4">
+          <p class="text-gray-700 font-semibold text-center">Card Title 1</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white shadow-lg max-w-sm rounded-lg overflow-hidden">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Property Image"
+          class="w-full h-40 object-cover"
+        />
+        <div class="p-4">
+          <p class="text-gray-700 font-semibold text-center">Card Title 2</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white shadow-lg max-w-sm rounded-lg overflow-hidden">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Property Image"
+          class="w-full h-40 object-cover"
+        />
+        <div class="p-4">
+          <p class="text-gray-700 font-semibold text-center">Card Title 3</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white shadow-lg max-w-sm rounded-lg overflow-hidden">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Property Image"
+          class="w-full h-40 object-cover"
+        />
+        <div class="p-4">
+          <p class="text-gray-700 font-semibold text-center">Card Title 4</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-evenly items-center mt-8">
+      <button
+      [routerLink]="['/dashboard/properties']"
+        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition"
+      >
+        Back
+      </button>
+      <button
+      [routerLink]="['/propertyDetails']"
+        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</div>

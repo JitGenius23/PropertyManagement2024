@@ -1,0 +1,37 @@
+<div class="container">
+  <!-- weekly plans -->
+  <div class="flex justify-center flex-wrap col-span-4 gap-4">
+    <app-subscription-card
+      [plans]="'Basic plan'"
+      [price]="2004"
+      [monthCount]="6"
+      [photoCount]="51"
+      [videoCount]="6"
+      [liveVideoCount]="2"
+    />
+    <app-subscription-card
+      [plans]="'Basic plan'"
+      [price]="2999"
+      [monthCount]="12"
+      [photoCount]="91"
+      [videoCount]="8"
+      [liveVideoCount]="6"
+    />
+    <app-subscription-card
+      [plans]="'Basic plan'"
+      [price]="3499"
+      [monthCount]="18"
+      [photoCount]="201"
+      [videoCount]="12"
+      [liveVideoCount]="12"
+    />
+    <app-subscription-card
+      [plans]="'Basic plan'"
+      [price]="4499"
+      [monthCount]="24"
+      [photoCount]="291"
+      [videoCount]="24"
+      [liveVideoCount]="18"
+    />
+  </div>
+</div>

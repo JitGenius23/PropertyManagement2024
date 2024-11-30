@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-signup-p2',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './signup-p2.component.html',
+  styleUrl: './signup-p2.component.css'
 })
-export class HeaderComponent {
+export class SignupP2Component {
 
 }
