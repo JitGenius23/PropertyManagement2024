@@ -1,3 +1,14 @@
 .sidebar {
     background-color: #FFFFFF;
 }
+
+.active{
+    background-color: #F2F9FF;
+    border-radius: 7px;
+    padding: 4px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.font {
+    font-weight: 600;
+}

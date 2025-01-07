@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { ChoosePlansComponent } from "../choose-plans/choose-plans.component";
+import { ChoosePlansComponent } from '../components/choose-plans/choose-plans.component';
+ 
 
 @Component({
   selector: 'app-home-main',

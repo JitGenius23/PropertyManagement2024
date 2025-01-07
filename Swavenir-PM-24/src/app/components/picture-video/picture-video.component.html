@@ -1,0 +1,71 @@
+<div class="container mx-auto p-4">
+  <!-- Image Section -->
+  <div class="img">
+    <h5 class="font-medium text-2xl my-4">Images</h5>
+  </div>
+  <div class="image-container grid max-md:grid-cols-3 sm:grid-cols-5 lg:grid-cols-4 gap-4 mb-8">
+    <img
+      src="https://th.bing.com/th/id/OIP.N8hUb6sJj77LTt55JEOAcQHaEo?w=301&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+      alt="Placeholder Image"
+      class="w-full h-auto rounded-lg shadow-md"
+      (click)="showImage($event)"
+    />
+    <img
+      src="https://th.bing.com/th/id/OIP.N8hUb6sJj77LTt55JEOAcQHaEo?w=301&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+      alt="Placeholder Image"
+      class="w-full h-auto rounded-lg shadow-md"
+      (click)="showImage($event)"
+    />
+    <img
+      src="https://th.bing.com/th/id/OIP.N8hUb6sJj77LTt55JEOAcQHaEo?w=301&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+      alt="Placeholder Image"
+      class="w-full h-auto rounded-lg shadow-md"
+      (click)="showImage($event)"
+    />
+    <img
+      src="https://th.bing.com/th/id/OIP.N8hUb6sJj77LTt55JEOAcQHaEo?w=301&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+      alt="Placeholder Image"
+      class="w-full h-auto rounded-lg shadow-md"
+      (click)="showImage($event)"
+    />
+    <img
+      src="https://th.bing.com/th/id/OIP.N8hUb6sJj77LTt55JEOAcQHaEo?w=301&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+      alt="Placeholder Image"
+      class="w-full h-auto rounded-lg shadow-md"
+      (click)="showImage($event)"
+    />
+  </div>
+
+  <div class="image-popup" [class.show]="showPopup" (click)="hideImage()">
+    <img class="lg:w-1/2 rounded-sm lg:h-auto" [src]="popupImageUrl" alt="">
+  </div>
+
+  <!-- Video Section -->
+  <div class="vdo">
+    <h5 class="font-medium text-2xl my-4">Videos</h5>
+  </div>
+  <div class="grid max-md:grid-cols-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <video controls class="w-full rounded-lg shadow-md" (click)="showImage($event)">
+      <source
+        src="https://youtu.be/wthi-5RbSU0?si=O4AAfzrlKotTSh27"
+        type="video/mp4"
+        aria-controls="true"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <video controls class="w-full rounded-lg shadow-md">
+      <source
+        src="https://th.bing.com/th?&id=OVP.b_MsD2Zqcv6bmyjkV9jDmAHgFo&w=296&h=165&c=7&pid=2.1&rs=1"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <video controls class="w-full rounded-lg shadow-md">
+      <source
+        src="https://th.bing.com/th?&id=OVP.b_MsD2Zqcv6bmyjkV9jDmAHgFo&w=296&h=165&c=7&pid=2.1&rs=1"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>

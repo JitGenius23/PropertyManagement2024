@@ -1,32 +1,25 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {
-  NavigationEnd,
-  NavigationStart,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-  RouterOutlet,
-} from '@angular/router';
+import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-admindash',
   standalone: true,
   imports: [RouterLink, RouterOutlet, CommonModule, RouterLinkActive],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css',
+  templateUrl: './admindash.component.html',
+  styleUrl: './admindash.component.css',
 })
-export class DashboardComponent {
+export class AdmindashComponent {
   isSidebarOpen = false;
   isDropdownOpen: boolean = false;
   activeRouterLink: string = '';
 
-  routeNames: {[key: string]: string} = {
+  routeNames: { [key: string]: string } = {
     '/properties': 'Properties',
     '/gallery': 'Gallery',
     '/reports': 'Reports',
-    '/support': 'Support'
-  }
+    '/support': 'Support',
+  };
 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {

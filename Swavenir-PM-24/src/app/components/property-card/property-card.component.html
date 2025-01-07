@@ -1,6 +1,6 @@
 <div class="container flex flex-col-reverse mx-auto lg:flex-row">
   <div
-    class="max-w-sm m-5 mx-auto bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200"
+    class="max-w-sm m-5 bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200"
   >
     <!-- Top Badges -->
     <div class="flex justify-between px-4 pt-4">
@@ -28,15 +28,24 @@
         <li><strong>State:</strong> California</li>
         <li><strong>City:</strong> Los Angeles</li>
         <li><strong>Pincode:</strong> 90001</li>
+        <!-- Hidden Information -->
+        <div id="extra-info" class="hidden">
+          <li><strong>Owner Name:</strong> John Doe</li>
+          <li><strong>Contact Number:</strong> +1 234 567 890</li>
+          <li><strong>Year Built:</strong> 2015</li>
+          <li><strong>Current Status:</strong> For Sale</li>
+        </div>
       </ul>
     </div>
 
     <!-- Full-width Button -->
     <div class="px-6 pb-4">
       <button
-        class="w-full bg-blue-600 text-white text-sm font-medium py-2 rounded hover:bg-blue-700"
+        id="toggle-info"
+        class="text-blue-500"
+        (click)="toggleExtraInfo()"
       >
-        View Details
+        More info
       </button>
     </div>
   </div>

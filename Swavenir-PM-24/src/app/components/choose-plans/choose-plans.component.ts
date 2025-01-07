@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router } from '@angular/router';
+// import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-choose-plans',
@@ -27,4 +28,15 @@ export class ChoosePlansComponent {
       price: '2099/month',
     },
   ];
+
+  // constructor(private authservice:AuthService, private router: Router){}
+
+  // choosePlan(plan: any) {
+  //   if(this.authservice.isAuthenticated()) {
+  //     this.router.navigate(['/propertyType'])
+  //   } else {
+  //     this.router.navigate(['/login'])
+  //   }
+  // }
+
 }
